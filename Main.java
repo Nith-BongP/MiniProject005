@@ -1,6 +1,3 @@
-
-
-
 import javafx.fxml.FXMLLoader;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -12,9 +9,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         var view_main = getClass().getResource("view.fxml");
-        var controller_main = new Controller();
         var loader_main = new FXMLLoader(view_main);
-        loader_main.setController(controller_main);
 
         var scene = new Scene(loader_main.load());
         stage.setScene(scene);
