@@ -39,5 +39,12 @@ public class Controller {
     void on_update(ActionEvent event) {
 
     }
+    @FXML
+    void initialize() {
+        var data = new ArrayList<String>();
+        data.add("Apple");
+        data.add("Banana"); 
+        data.add("Orange");
+    }
 
 }

@@ -13,6 +13,8 @@ public class Main extends Application {
 
         var scene = new Scene(loader_main.load());
         stage.setScene(scene);
+        stage.setTitle("Mini Project 5 CRUD DATA");
+        stage.getIcons().add(new javafx.scene.image.Image(getClass().getResourceAsStream("Asset/Logo-GTRSC-png.png")));
         stage.show();
     }
 
