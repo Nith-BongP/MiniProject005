@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -32,7 +34,17 @@ public class Controller {
 
     @FXML
     void on_read(ActionEvent event) {
+        var stage = (Stage) label_status.getScene().getWindow();
+        var file_chooser = new FileChooser();
+        var selected = file_chooser.showOpenDialog(stage);
 
+        var data = new ArrayList<String>();
+        for(var line : Files.readAllLine(selected.toPath())){
+            data.add(line);
+        }
+        // var data = new ArrayList<String>();
+        // var file = new File(selected.getAbsolutePath());
+        //var list = new ArrayList<String>();
     }
 
     @FXML
