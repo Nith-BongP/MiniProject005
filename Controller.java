@@ -1,49 +1,43 @@
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
 
 public class Controller {
-    
+
     @FXML
     private Button button_create;
-    
-    @FXML
-    private Button button_read;
-    
-    @FXML
-    private Button button_update;
-    
+
     @FXML
     private Button button_delete;
-    
+
+    @FXML
+    private Button button_read;
+
+    @FXML
+    private Button button_update;
+
     @FXML
     private Label label_status;
-    
+
     @FXML
-    private ListView listView;
-    
-    @FXML
-    private void buttonCreate() {
-        label_status.setText("Create");
-        // TODO: Implement create functionality
+    void on_create(ActionEvent event) {
+
     }
-    
+
     @FXML
-    private void buttonRead() {
-        label_status.setText("Read");
-        // TODO: Implement read functionality
+    void on_delete(ActionEvent event) {
+
     }
-    
+
     @FXML
-    private void on_update() {
-        label_status.setText("Update");
-        // TODO: Implement update functionality
+    void on_read(ActionEvent event) {
+
     }
-    
+
     @FXML
-    private void on_delete() {
-        label_status.setText("Delete");
-        // TODO: Implement delete functionality
+    void on_update(ActionEvent event) {
+
     }
+
 }
