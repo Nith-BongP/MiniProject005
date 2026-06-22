@@ -1,9 +1,12 @@
+import java.nio.file.Files;
 import java.util.ArrayList;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 public class Controller {
 
@@ -42,9 +45,8 @@ public class Controller {
         for(var line : Files.readAllLine(selected.toPath())){
             data.add(line);
         }
-        // var data = new ArrayList<String>();
-        // var file = new File(selected.getAbsolutePath());
-        //var list = new ArrayList<String>();
+        Object listview;
+        listview.getitems().addAll(data);
     }
 
     @FXML
